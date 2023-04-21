@@ -12,4 +12,3 @@ function decrypt() {
     document.getElementById("result").innerHTML = text2;
     document.getElementById("titleresult").innerHTML = "Texto Descifrado";
 }
-
