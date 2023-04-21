@@ -3,18 +3,22 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css\\style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>idcrypter</title>
 </head>
 <body>
-    <h1 class="center">IDCRYPTER</h1>
     <div>
-        <input type="text" id="input" name="texto">
+        <h1 class="center">IDCRYPTER</h1>
+        <h3>Texto</h3>
+        <label for="text">Escribe el texto:</label>
+        <input type="text" id="text" name="text"><br>
+        <input type="button" value="Cifrar" onclick="encrypt()" id="cifrar">
+        <input type="button" value="Descifrar" onclick="decrypt()" id="descifrar">
     </div>
     <div>
-        <input type="submit" value="Cifrar">
-        <input type="submit" value="Descifrar">
+        <h3 id="titleresult"></h3>
+        <p>Hola, como estas <span id="result"></span></p>
     </div>
+    <script src="js\index.js"></script>
 </body>
 </html>
