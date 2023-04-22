@@ -8,37 +8,58 @@
 </head>
 <body>
     <div>
-        <h1 class="center">IDCRYPTER</h1>
-        <textarea name="input" id="input" cols="50" rows="3" autofocus autocomplete="off"></textarea><br>
-        <input name="password" id="password" type="text"><br>
-        <select name="method" id="method">
-            <option value="">Binario</option>
-            <option value="">Hexadecimal</option>
-            <option value="">Cifrado URL</option>
-            <option value="">Texto al revés</option>
-            <option value="">Base 64</option>
-            <option value="">Cifrado César</option>
-            <option value="">Entidades HTML</option>
-            <option value="">Cifrado ROT-13</option>
-            <option value="">l33t 5p34k</option>
-            <option value="">Pig Latin</option>
-            <option value="">AES</option>
-            <option value="">DES</option>
-            <option value="">Triple DES</option>
-            <option value="">Rijndael 192</option>
-            <option value="">Rijndael 256</option>
-            <option value="">Serpent</option>
-            <option value="">TwoFish</option>
-            <option value="">Blowfish</option>
-            <option value="">GOST</option>
-            <option value="">CAST5</option>
-            <option value="">CAST6</option>
-            <option value="">Loki97</option>
-            <option value="">Safer+</option>
-            <option value="">XTEA</option>
-        </select><br>
-        <input type="button" value="Cifrar" onclick="encrypt()" id="cifrar">
-        <input type="button" value="Descifrar" onclick="decrypt()" id="descifrar">
+        <h1 class="center" class="underline">IDCRYPTER</h1>
+    </div>
+    <div>
+        <form action="" method="post">
+            <div class="center">
+                <label for="input">Texto: </label>
+                <br>
+                <input type="text" id="input" name="input" autofocus autocomplete="off" placeholder="Texto a cifrar">
+            </div>
+            <br>
+            <div class="center">
+                <label for="password">Clave: </label>
+                <br>
+                <input name="password" id="password" type="password" placeholder="Clave de cifrado">
+            </div>
+            <br>
+            <div class="center">
+                <label for="method">Método: </label>
+                <br>
+                <select name="method" id="method">
+                    <option value="">Binario</option>
+                    <option value="">Hexadecimal</option>
+                    <option value="">Cifrado URL</option>
+                    <option value="">Texto al revés</option>
+                    <option value="">Base 64</option>
+                    <option value="">Cifrado César</option>
+                    <option value="">Entidades HTML</option>
+                    <option value="">Cifrado ROT-13</option>
+                    <option value="">l33t 5p34k</option>
+                    <option value="">Pig Latin</option>
+                    <option value="">AES</option>
+                    <option value="">DES</option>
+                    <option value="">Triple DES</option>
+                    <option value="">Rijndael 192</option>
+                    <option value="">Rijndael 256</option>
+                    <option value="">Serpent</option>
+                    <option value="">TwoFish</option>
+                    <option value="">Blowfish</option>
+                    <option value="">GOST</option>
+                    <option value="">CAST5</option>
+                    <option value="">CAST6</option>
+                    <option value="">Loki97</option>
+                    <option value="">Safer+</option>
+                    <option value="">XTEA</option>
+                </select>
+            </div>
+            <br>
+            <div class="center">
+                <input type="button" value="Cifrar" onclick="encrypt()" id="cifrar">
+                <input type="button" value="Descifrar" onclick="decrypt()" id="descifrar">
+            </div>
+        </form>
     </div>
     <div>
         <h3 id="titleresult"></h3>
