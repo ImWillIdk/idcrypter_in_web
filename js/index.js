@@ -1,14 +1,13 @@
 var text = null;
-var text2 = text;
+var password = null;
 
 function encrypt() {
-    text = document.getElementById("text").value;
-    document.getElementById("result").innerHTML = text2;
+    text = document.getElementById("input").value;
+    password = document.getElementById("password").value;
+    document.getElementById("result").innerHTML = text;
     document.getElementById("titleresult").innerHTML = "Texto Cifrado";
 }
 
-function decrypt() {
-    text = document.getElementById("text").value;
-    document.getElementById("result").innerHTML = text2;
-    document.getElementById("titleresult").innerHTML = "Texto Descifrado";
+function binary() {
+    
 }
