@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <h1 class="center" class="underline">IDCRYPTER</h1>
+        <h1 id="idcrypter">IDCRYPTER</h1>
     </div>
     <div>
         <form action="" method="post">
@@ -28,30 +28,30 @@
                 <label for="method">Método: </label>
                 <br>
                 <select name="method" id="method">
-                    <option value="">Binario</option>
-                    <option value="">Hexadecimal</option>
-                    <option value="">Cifrado URL</option>
-                    <option value="">Texto al revés</option>
-                    <option value="">Base 64</option>
-                    <option value="">Cifrado César</option>
-                    <option value="">Entidades HTML</option>
-                    <option value="">Cifrado ROT-13</option>
-                    <option value="">l33t 5p34k</option>
-                    <option value="">Pig Latin</option>
-                    <option value="">AES</option>
-                    <option value="">DES</option>
-                    <option value="">Triple DES</option>
-                    <option value="">Rijndael 192</option>
-                    <option value="">Rijndael 256</option>
-                    <option value="">Serpent</option>
-                    <option value="">TwoFish</option>
-                    <option value="">Blowfish</option>
-                    <option value="">GOST</option>
-                    <option value="">CAST5</option>
-                    <option value="">CAST6</option>
-                    <option value="">Loki97</option>
-                    <option value="">Safer+</option>
-                    <option value="">XTEA</option>
+                    <option value="bin">Binario</option>
+                    <option value="hex">Hexadecimal</option>
+                    <option value="url">Cifrado URL</option>
+                    <option value="rev">Texto al revés</option>
+                    <option value="b64">Base 64</option>
+                    <option value="cae">Cifrado César</option>
+                    <option value="ent">Entidades HTML</option>
+                    <option value="rot">Cifrado ROT-13</option>
+                    <option value="l33">l33t 5p34k</option>
+                    <option value="pig">Pig Latin</option>
+                    <option value="aes">AES</option>
+                    <option value="des">DES</option>
+                    <option value="3des">Triple DES</option>
+                    <option value="rij192">Rijndael 192</option>
+                    <option value="rij256">Rijndael 256</option>
+                    <option value="serp">Serpent</option>
+                    <option value="2f">TwoFish</option>
+                    <option value="bf">Blowfish</option>
+                    <option value="gost">GOST</option>
+                    <option value="ca5">CAST5</option>
+                    <option value="ca6">CAST6</option>
+                    <option value="loki">Loki97</option>
+                    <option value="saf">Safer+</option>
+                    <option value="xt">XTEA</option>
                 </select>
             </div>
             <br>
@@ -61,7 +61,7 @@
             </div>
         </form>
     </div>
-    <div>
+    <div class="center">
         <h3 id="titleresult"></h3>
         <p><span id="result"></span></p>
     </div>

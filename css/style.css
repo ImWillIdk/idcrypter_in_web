@@ -1,6 +1,14 @@
+*{
+    background-color: #2a2a31;
+    color: white
+}
 .center{
     text-align: center;
 }
 .underline{
     text-decoration: underline;
+}
+#idcrypter{
+    text-align: center;
+    color: darkorange;
 }
