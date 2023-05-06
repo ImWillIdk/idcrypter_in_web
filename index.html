@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css\\style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\\icon.jpg" type="image/jpg">
     <title>idcrypter</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                     <option value="hex">Hexadecimal</option>
                     <option value="url">Cifrado URL</option>
                     <option value="rev">Texto al revés</option>
-                    <option value="b64">Base 64</option>
+                    <option value="b64" selected>Base 64</option>
                     <option value="cae">Cifrado César</option>
                     <option value="ent">Entidades HTML</option>
                     <option value="rot">Cifrado ROT-13</option>
@@ -55,7 +56,7 @@
                 </select>
             </div>
             <br>
-            <div class="center">
+            <div class="center button">
                 <input type="button" value="Cifrar" onclick="encrypt()" id="cifrar">
                 <input type="button" value="Descifrar" onclick="decrypt()" id="descifrar">
             </div>

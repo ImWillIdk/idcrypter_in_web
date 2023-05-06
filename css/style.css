@@ -12,3 +12,7 @@
     text-align: center;
     color: darkorange;
 }
+.button input{
+    border-radius: 8px;
+    background-color: #04AA6D;
+}
